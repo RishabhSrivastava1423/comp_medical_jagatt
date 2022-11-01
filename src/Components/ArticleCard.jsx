@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import imgCard from '../assests/article-feature-image.jpg';
 
 function ArticleCard() {
@@ -8,18 +9,18 @@ function ArticleCard() {
         setIcon(icon => !icon);
       }
   return (
-    <div className="card h-100">
-      <img src={imgCard} className="card-img-top" alt="..." />
-      <div className="card-body">
-        <div className='card-img-overlay mt-auto' >
-            <div className="row" style={{'color':'white'}}>
-                <div className="col-md-10" style={{'fontSize':'12px'}}><p>Category Name <br/> September 14, 2022</p></div>
-                <div className="col-md-2" onClick={handleClick} >{icon ? <i class="fa-solid fa-heart"/> : <i class="fa-regular fa-heart"/> }</div>
+    <div className="card card-blog-mj">
+      <img src={imgCard} className="card-banner-img" alt="..." />
+      <div className="blog_cat_icon o-10-r"><p>Category Name <br/> September 14, 2022</p></div>
+      <div  onClick={handleClick} >{icon ? <i className="fa fa-solid fa-heart heart"/> : <i className="fa-regular fa-heart heart"/> }</div>
+      <div class="card-body-mj">
+              <p class="card-heading b2-16-m"><Link to="/">Some quick example text to build on the card title and make up
+                  the
+                  bulk of the card's
+                  content...</Link></p>
+              <p class="card-para s2-14-r">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque repellat quae
+                facere ipsam officiis corporis, unde quos excepturi saepe magni...</p>
             </div>
-        </div>
-        <h5 className="card-title">Some quick example text to build on the card title and make up the bulk of the card's content...</h5>
-        <p className="card-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore dignissimos quam, quod, ....</p>
-      </div>
     </div>
   )
 }

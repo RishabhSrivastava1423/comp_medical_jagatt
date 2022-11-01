@@ -1,18 +1,44 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
 
-function NavIcons() {
+const NavIcons = () => {
   return (
-    <div style={{'outline':'None'}}>
-        <button type="button" className="btn btn-outline-info btn-sm m-2">Review</button>
-        <button type="button" className="btn btn-outline-info btn-sm m-2">Admission</button>
-        <button type="button" className="btn btn-outline-info btn-sm m-2"><i className="fa-brands fa-facebook-f"/></button>
-        <button type="button" className="btn btn-outline-info btn-sm m-2"><i className="fa-brands fa-twitter"/></button>
-        <button type="button" className="btn btn-outline-info btn-sm m-2"><i className="fa-brands fa-instagram"/></button>
-        <button type="button" className="btn btn-outline-info btn-sm m-2"><i className="fa-brands fa-youtube"/></button>
-        <button type="button" className="btn btn-outline-info btn-sm m-2"><i className="fa-brands fa-linkedin"/></button>
-        
-    </div>
-  )
-}
+    <React.Fragment>
+      <ul className="text-right social">
+        <li className="link-text">
+          <Link to="/">Reviews</Link>
+        </li>
+        <li className="link-text">
+          <Link to="/">Admission</Link>
+        </li>
+        <li className="link-text">
+          <Link to="/">
+            <i className="fa fa-facebook" />
+          </Link>
+        </li>
+        <li className="link-text">
+          <Link to="/">
+            <i className="fa fa-twitter" />
+          </Link>
+        </li>
+        <li className="link-text">
+          <Link to="/">
+            <i className="fa fa-instagram" />
+          </Link>
+        </li>
+        <li className="link-text">
+          <Link to="/">
+          <i class="fa fa-youtube"></i>
+          </Link>
+        </li>
+        <li className="link-text">
+          <Link to="/">
+            <i className="fa fa-linkedin" />
+          </Link>
+        </li>
+      </ul>
+    </React.Fragment>
+  );
+};
 
-export default NavIcons
+export default NavIcons;

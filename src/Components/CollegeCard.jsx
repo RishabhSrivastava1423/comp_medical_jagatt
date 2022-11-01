@@ -1,48 +1,85 @@
-import React from 'react'
-import { useState } from 'react';
-import imgCard from '../assests/college-banner.jpg'
-import locImg from '../assests/location_logo.jpg'
+import React from "react";
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import imgCard from "../assests/college-banner.jpg";
+import locImg from "../assests/location_logo.jpg";
 
 function CollegeCard() {
-    const [icon,setIcon] = useState(false);
-    const handleClick =()=>{
-        setIcon(icon => !icon);
-      }
+  const [icon, setIcon] = useState(false);
+  const handleClick = () => {
+    setIcon((icon) => !icon);
+  };
   return (
-    <div className="card h-100">
-      <img src={imgCard} className="card-img-top" alt="..." />
-      <div className="card-body">
-        <div className='card-img-overlay mt-auto' >
-            <div className="row" style={{'color':'white'}}>
-                <div className="col-md-2"><img src={locImg} alt="..." /></div>
-                <div className="col-md-8" style={{'fontSize':'12px', 'fontWeight':'bold',}}>  <p>Location <br/> Approved by</p></div>
-                <div className="col-md-2" onClick={handleClick} >{icon ? <i class="fa-solid fa-heart"/> : <i class="fa-regular fa-heart"/> }</div>
-            </div>
+    <div className="card card-college-mj">
+      <img src={imgCard} className="card-banner-img" alt="..." />
+      <div class="card_bottom_colg">
+        <img class="colg_logo" src={locImg} alt="Card image cap" />
+        <div class="colg_cat_icon o-10-r">
+          location <br /> Approved by
         </div>
-        <h5 className="card-title">All India Institute of Medical Sciences - [AIIMS] - New Delhi</h5>
-        <div className="row" style={{'fontSize':'13px', 'fontWeight':'bold'}}>
-            <div className="col-md-4"> <p>15,520</p> </div>
-            <div className="col-md-8"> <p>NEET</p></div>
-        </div>
-        <div className="row" style={{'fontSize':'13px', 'fontWeight':'bold'}}>
-            <div className="col-md-4"> <p> MBBS</p> </div>
-            <div className="col-md-8" > <p>FIRST YEAR EXAM ACCEPTED </p> </div>
-        </div>
-        <div className="row" style={{'fontSize':'10px', 'fontWeight':'bold'}}>
-            <div className="col-md-3"> <p>ADDMISSION 2022 </p> </div>
-            <div className="col-md-3" > <p>COURSE & FEES</p> </div>
-            <div className="col-md-3" > <p>  FACILITIES</p></div>
-            <div className="col-md-3" > <p>RESULT</p> </div>
-        </div>
-        <div className="row" style={{'fontSize':'13px'}}>
-            <div className="col-md-6"> <button type="button" class="btn btn-info btn-lg" style={{'width':'100%'}}>Apply Now</button></div>
-            <div className="col-md-6"> <button type="button" class="btn btn-info btn-lg" style={{'width':'100%'}}>Know More</button></div>
+        <div onClick={handleClick}>
+          {icon ? (
+            <i className=" fa fa-solid fa-heart heart" />
+          ) : (
+            <i className="fa-regular fa-heart heart" />
+          )}
         </div>
       </div>
+      <div className="card-body-mj">
+        <p class="card-heading b2-16-m">
+          <Link to="/">
+            All India Institute of Medical Sciences - [AIIMS] - New Delhi
+          </Link>
+        </p>
+        <div class="row">
+          <ul class="col-3 colg-fee">
+            <li class="high s2-14-m">15,520</li>
+            <li class="low o-10-r">MBBS</li>
+          </ul>
+          <ul class="col-9 colg-enterance-exam">
+            <li class="high s2-14-m mb-1">NEET</li>
+            <li class="low o-10-r">1ST YEAR EXAM ACCEPTED</li>
+          </ul>
+          <ul class="col-12 colg_sub_silos">
+            <li>
+              {" "}
+              <Link to="/" class="c12-sm">
+                Admission 2022
+              </Link>{" "}
+            </li>
+            <li>
+              {" "}
+              <Link to="/" class="c12-sm">
+                Courses &amp; fees
+              </Link>{" "}
+            </li>
+            <li>
+              {" "}
+              <Link to="/" class="c12-sm">
+                Facilities
+              </Link>{" "}
+            </li>
+            <li>
+              {" "}
+              <Link to="/" class="c12-sm">
+                Result
+              </Link>{" "}
+            </li>
+          </ul>
+        </div>
+        <button type="button" class="btn-mj btn_primary_large m-1">
+          Apply now
+        </button>
+        <button type="button" class="btn-mj btn_secondary_large">
+          Know More
+        </button>
+      </div>
     </div>
-  )
+  );
 }
 
-export default CollegeCard
+export default CollegeCard;
 
-{/* <button type="button" class="btn btn-info">Info</button> */}
+{
+  /* <button type="button" className="btn btn-info">Info</button> */
+}
