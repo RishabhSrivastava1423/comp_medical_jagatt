@@ -1,598 +1,773 @@
-
-
-.mb-4, .my-4 {
-  margin-bottom: 1.5rem!important;
-}
-.bg_secondary_mj {
-  background-color: var(--prime-2-100);
-}
-
-.pb-1, .py-1 {
-  padding-bottom: 0.25rem!important;
-}
-
-.pt-1, .py-1 {
-  padding-top: 0.25rem!important;
-}
-.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
 .container-mj {
-  max-width: 1440px !important;
-  position: relative;
-}
-.row {
-  
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
-}
-#top-header p.notification {
-  color: var(--white);
-  font-size: 12px;
-  margin-bottom: 0;
+    padding: 0 40px;
+    max-width: 1440px !important;
+    position: relative;
 }
 
-p {
-  margin-top: 0;
-}
-ul.social {
-  list-style: none;
-  margin-bottom: 0 !important;
+section {
+    padding: 52px 0 !important;
+    margin: auto;
 }
 
-.text-right {
-  text-align: right!important;
-}
-dl, ol, ul {
-  margin-top: 0;
-}
-ul.social li:hover {
-  background-color: var(--prime-1-100);
-}
-ul.social li.link-text {
-  color: var(--white);
-  font-size: 12px;
+
+/************* MEDICALJAGAT FONT STYLE START HERE *************/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: .5rem
 }
 
-ul.social li {
-  display: inline-block;
-  padding: 4px 8px;
-  border-radius: 4px;
-}
-ul.social li a {
-  color: var(--white);
-}
-a {
-  font-size: 14px;
-  color: #ff0004;
-  text-decoration: none;
-  background-color: transparent;
-}
-.fa {
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-ul {
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 40px;
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h5-sb,
+.h6,
+.h6-sb,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    font-family: 'vollkern', serif;
 }
 
-.table-responsive {
-  display: block;
-  width: 100%;
-  overflow-x: auto;
-}
-.table {
-  margin-bottom: 1rem;
-  color: #212529;
+.h1,
+h1 {
+    font-size: 54px !important;
 }
 
-table {
-  border-collapse: collapse;
-}
-[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
-  cursor: pointer;
+.h2,
+h2 {
+    font-size: 48px !important;
 }
 
-[type=button], [type=reset], [type=submit], button {
-  -webkit-appearance: button;
-}
-.btn_primary_large {
-  background-color: var(--prime-1-100);
-  color: var(--white);
-  border: none;
-}
-.btn_primary_large:hover {
-  background-color: var(--prime-2-80);
-  color: var(--white);
-  border-color: var(--prime-2-80);
-}
-.btn_secondary_large {
-  background-color: var(--white);
-  color: var(--prime-1-100);
-  border: 1px solid var(--prime-1-100);
-}
-.btn_secondary_large:hover {
-  background-color: var(--prime-2-80);
-  color: var(--white);
-  border-color: var(--prime-2-80);
-}
-.btn_tertiary_large {
-  background-color: var(--white);
-  color: var(--prime-1-100);
-  border: 1px hidden var(--prime-1-20);
-  text-decoration: underline;
-}
-.btn_tertiary_large:hover {
-  color: var(--black);
-}
-.btn-mj {
-  padding: 12px 32px;
-  text-align: center;
-  font-weight: 400;
-  font-family: var(--running-font);
-  font-size: 16px;
-  letter-spacing: 0.15px;
-  border-radius: 4px;
-}
-button, select {
-  text-transform: none;
-}
-button, input {
-  overflow: visible;
-}
-button, input, optgroup, select, textarea {
-  margin: 0;
-  line-height: inherit;
-}
-.table td, .table th {
-  padding: 0.75rem;
-  vertical-align: top;
-  border-top: 1px solid #dee2e6;
-}
-button {
-  border-radius: 0;
-}
-.btn_primary_small {
-  background-color: var(--prime-1-100);
-  color: var(--white);
-  border: none;
+.h3,
+h3 {
+    font-size: 42px !important;
 }
 
-.btn-mj-s {
-  padding: 4px 12px;
-  text-align: center;
-  font-weight: 400;
-  font-family: var(--running-font);
-  font-size: 12px;
-  letter-spacing: 0.4px;
-  border-radius: 4px;
-}
-.btn_primary_small:hover {
-  background-color: var(--prime-2-100);
-}
-.btn_secondary_small {
-  background-color: var(--white);
-  color: var(--prime-1-100);
-  border: 1px solid var(--prime-1-100);
-}
-.btn_secondary_small:hover {
-  background-color: var(--prime-2-80);
-  color: var(--white);
-  border-color: var(--prime-2-80);
-}
-.btn-mj-s {
-  padding: 4px 12px;
-  text-align: center;
-  font-weight: 400;
-  font-family: var(--running-font);
-  font-size: 12px;
-  letter-spacing: 0.4px;
-  border-radius: 4px;
-}
-.btn_tertiary_small:hover {
-  color: var(--prime-2-100);
-}
-.dark-bg-add {
-  color: var(--white);
-  background-color: var(--sec-2-100);
-  border: 1px solid var(--sec-2-100);
-}
-.btn_tertiary_small {
-  background-color: var(--white);
-  color: var(--prime-1-100);
-  text-decoration: underline;
-  border: none;
-  font-weight: 500;
-}
-.btn_primary_large_disable {
-  background-color: var(--prime-2-20);
-  color: var(--black-40);
-  border: 1px solid var(--prime-2-20);
-}
-.btn_secondary_large_disable {
-  background-color: var(--prime-2-20);
-  color: var(--black-40);
-  border: 1px solid var(--black-30);
-}
-.dark-bg-add:hover {
-  background-color: var(--white);
-  color: var(--sec-2-100);
-}
-.light-bg-add:hover {
-  color: var(--white);
-  background-color: var(--prime-2-80);
-  border: 1px solid var(--prime-2-80);
-}
-.btn_primary_small_disable {
-  background-color: var(--prime-2-20);
-  color: var(--black-40);
-  border: 1px solid var(--prime-2-20);
+.h4,
+h4 {
+    font-size: 36px !important;
 }
 
-.btn-mj-s {
-  padding: 4px 12px;
-  text-align: center;
-  font-weight: 400;
-  font-family: var(--running-font);
-  font-size: 12px;
-  letter-spacing: 0.4px;
-  border-radius: 4px;
-}
-.btn_secondary_small_disable {
-  background-color: var(--prime-2-20);
-  color: var(--black-40);
-  border: 1px solid var(--black-30);
-}
-.sub-silos-list {
-  border: 1px solid #000;
-  padding: 12px;
-  border-radius: 4px;
-  vertical-align: middle;
-}
-.sub-silos-list:hover {
-  border: 1px solid var(--prime-1-100);
-  color: var(--prime-1-100);
-}
-.btn-mj-add {
-  padding: 8px 16px;
-  text-align: center;
-  font-weight: 400;
-  font-family: var(--running-font);
-  font-size: 14px;
-  border-radius: 32px;
-}
-.light-bg-add {
-  color: var(--prime-2-100);
-  background-color: var(--prime-2-20);
-  border: 1px solid var(--prime-2-20);
-}
-.mr-2, .mx-2 {
-  margin-right: 0.5rem!important;
+.h5,
+h5 {
+    font-size: 30px !important;
 }
 
-.card-blog-mj, .card-college-mj {
-  border-radius: 4px !important;
-  border: 1px solid var(--black-20) !important;
-}
-.blog_cat_icon {
-  color: var(--white);
-  position: absolute;
-  top: 104px;
-  left: 8px;
+.h5-sb {
+    font-size: 30px !important;
+    font-weight: 600;
 }
 
-.o-10-r {
-  font-family: var(--running-font);
-  font-size: 10px;
-  font-weight: 400;
-  line-height: 1.4;
-  letter-spacing: 0.15px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-.heart {
-  position: absolute;
-  top: 112px;
-  right: 12px;
-  color: var(--prime-1-100);
+.h6,
+h6 {
+    font-size: 26px !important;
 }
 
-.card-body-mj p {
-  margin-bottom: 0 !important;
+.h6-sb {
+    font-size: 26px !important;
+    font-weight: 600;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: .5rem
+}
+
+.s1-18-sb {
+    font-family: var(--running-font);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 0.15px;
+}
+
+.s2-18-r {
+    font-family: var(--running-font);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.15px;
+    text-decoration: underline;
+}
+
+.b1-16-r {
+    font-family: var(--running-font);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.15px;
+}
+
+.l2-16 {
+    font-family: var(--running-font);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 200%;
+    letter-spacing: 0.15px;
 }
 
 .b2-16-m {
-  font-family: var(--running-font);
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 140%;
-  letter-spacing: 0.15px;
-}
-p {
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
-p {
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-}
-.card-body-mj p.card-para {
-  color: var(--black-60);
+    font-family: var(--running-font);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 140%;
+    letter-spacing: 0.15px;
 }
 
-.card-body-mj p {
-  margin-bottom: 0 !important;
+.b3-16-b {
+    font-family: var(--running-font);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 0.15px;
 }
+
+.bl-16-r {
+    font-family: var(--running-font);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.15px;
+    text-decoration: underline;
+}
+
+.s2-14-m {
+    font-family: var(--running-font);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 140%;
+    letter-spacing: 0.15px;
+}
+
 .s2-14-r {
-  font-family: var(--running-font);
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 140%;
-  letter-spacing: 0.15px;
-}
-.card-banner-img {
-  height: 140px;
-  border-radius: 4px 4px 0 0;
+    font-family: var(--running-font);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.15px;
 }
 
-img {
-  vertical-align: middle;
-  border-style: none;
+.sl-14-r {
+    font-family: var(--running-font);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.15px;
+    text-decoration: underline;
 }
 
-.card-body-mj p.card-heading a {
-  letter-spacing: var(--letter-space);
-  margin-bottom: 0;
-  color: var(--black);
+.s2l-14-r {
+    font-family: var(--running-font);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.15px;
+    text-transform: uppercase;
 }
 
-a {
-  color: #007bff;
-  text-decoration: none;
-  background-color: transparent;
-}
-.card-body-mj p.card-heading a:hover {
-  color: var(--prime-1-100);
-  text-decoration: none;
-}
-.card-body-mj {
-  flex: 1 1 auto;
-  padding: 8px;
-}
-.card {
-  position: relative;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  min-width: 0;
-  word-wrap: break-word;
-  background-color: #fff;
-  background-clip: border-box;
-  border: 1px solid rgba(0,0,0,.125);
-  border-radius: 0.25rem;
-}
-
-.card-blog-mj, .card-college-mj {
-  border-radius: 4px !important;
-  border: 1px solid var(--black-20) !important;
-}
-.card-banner-img {
-  height: 140px;
-  border-radius: 4px 4px 0 0;
-}
-
-.card_bottom_colg {
-  margin-top: -60px;
-  display: inline-block;
-}
-
-.card_bottom_colg img.colg_logo {
-  height: 52px;
-  width: 52px;
-  margin-left: 8px;
-  border-radius: 4px;
-}
-
-img {
-  vertical-align: middle;
-  border-style: none;
-}
-.card-college-mj .colg_cat_icon {
-  color: var(--white);
-  position: absolute;
-  top: 104px;
-  left: 68px;
-}
-
-.o-10-r {
-  font-family: var(--running-font);
-  font-size: 10px;
-  font-weight: 400;
-  line-height: 1.4;
-  letter-spacing: 0.15px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-.card-body-mj p {
-  margin-bottom: 0 !important;
-}
-
-.b2-16-m {
-  font-family: var(--running-font);
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 140%;
-  letter-spacing: 0.15px;
-}
-.card-body-mj ul.colg-fee, ul.colg-enterance-exam {
-  list-style: none;
-  margin-bottom: 0;
-}
-
-.col-3 {
-  -ms-flex: 0 0 25%;
-  flex: 0 0 25%;
-  max-width: 25%;
-}
-
-ul.colg_sub_silos {
-  line-height: 1.4;
-  list-style: none;
-  margin-bottom: 8px;
-}
-.card-body-mj .colg-fee li.high, ul.colg-enterance-exam li.high {
-  color: var(--prime-1-100);
-}
-
-.card-body-mj ul.colg-fee li {
-  display: inline-block;
-}
-.s2-14-m {
-  font-family: var(--running-font);
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 140%;
-  letter-spacing: 0.15px;
-}
-.card-body-mj .colg-fee li.low, ul.colg-enterance-exam li.low {
-  color: var(--black-40);
-}
-
-.card-body-mj ul.colg-fee li {
-  display: inline-block;
-}
-.o-10-r {
-  font-family: var(--running-font);
-  font-size: 10px;
-  font-weight: 400;
-  line-height: 1.4;
-  letter-spacing: 0.15px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-.card-body-mj ul.colg-fee, ul.colg-enterance-exam {
-  list-style: none;
-  margin-bottom: 0;
-}
-
-.col-9 {
-  -ms-flex: 0 0 75%;
-  flex: 0 0 75%;
-  max-width: 75%;
-}
-.card-body-mj .colg-fee li.high, ul.colg-enterance-exam li.high {
-  color: var(--prime-1-100);
-}
-
-.mb-1, .my-1 {
-  margin-bottom: 0.25rem!important;
-}
-.s2-14-m {
-  font-family: var(--running-font);
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 140%;
-  letter-spacing: 0.15px;
-}
-.card-body-mj .colg-fee li.low, ul.colg-enterance-exam li.low {
-  color: var(--black-40);
-}
-
-.o-10-r {
-  font-family: var(--running-font);
-  font-size: 10px;
-  font-weight: 400;
-  line-height: 1.4;
-  letter-spacing: 0.15px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-ul.colg_sub_silos {
-  line-height: 1.4;
-  list-style: none;
-  margin-bottom: 8px;
-}
-
-ul.colg_sub_silos li a {
-  color: var(--tertiary-100);
+.c12-r {
+    font-family: var(--running-font);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.15px;
 }
 
 .c12-sm {
-  font-family: var(--running-font);
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 140%;
-  letter-spacing: 0.15px;
-}
-a {
-  color: #007bff;
-  text-decoration: none;
-  background-color: transparent;
-}
-ul.colg_sub_silos li {
-  display: inline-block;
-  margin-left: 8px;
-}
-article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
-  display: block;
-}
-section {
-  padding: 52px 0 !important;
-  margin: auto;
+    font-family: var(--running-font);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 140%;
+    letter-spacing: 0.15px;
 }
 
-section {
-  padding: 52px 0 !important;
-  margin: auto;
+.cl-12-r {
+    font-family: var(--running-font);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.15px;
+    text-decoration: underline;
 }
+
+.o-10-r {
+    font-family: var(--running-font);
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 1.4;
+    letter-spacing: 0.15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.pb-1, .py-1 {
+    padding-bottom: 0.25rem!important;
+}
+.pt-1, .py-1 {
+    padding-top: 0.25rem!important;
+}
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.col-md-6{
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+
+}
+a:-webkit-any-link {
+    cursor: pointer;
+}
+/************* MEDICALJAGAT FONT STYLE END HERE *************/
+
+
+/****** Status color start here ******/
+
+.bg_primary_mj {
+    background-color: var(--prime-1-100);
+}
+
+Link.bg_primary_mj:focus,
+Link.bg_primary_mj:hover,
+button.bg_primary_mj:focus,
+button.bg_primary_mj:hover {
+    background-color: var(--prime-1-20);
+}
+
+.bg_secondary_mj {
+    background-color: var(--prime-2-100);
+}
+
+Link.bg_secondary_mj:focus,
+Link.bg_secondary_mj:hover,
+button.bg_secondary_mj:focus,
+button.bg_secondary_mj:hover {
+    background-color: var(--prime-2-20);
+}
+
+.bg_success_mj {
+    background-color: var(--success-80);
+}
+
+Link.bg_success_mj:hover,
+Link.bg_success_mj:focus,
+button.bg_success_mj:focus,
+button.bg_success_mj:hover {
+    background-color: var(--success-20);
+}
+
+.bg_info_mj {
+    background-color: var(--info-80);
+}
+
+Link.bg_info_mj:focus,
+Link.bg_info_mj:hover,
+button.bg_info_mj:focus,
+button.bg_info_mj:hover {
+    background-color: var(--info-20);
+}
+
+.bg_warning_mj {
+    background-color: var(--warning-80);
+}
+
+a.bg_warning_mj:focus,
+a.bg_warning_mj:hover,
+button.bg_warning_mj:focus,
+button.bg_warning_mj:hover {
+    background-color: var(--warning-20);
+}
+
+.bg_danger_mj {
+    background-color: var(--danger-80);
+}
+
+Link.bg_danger_mj:focus,
+Link.bg_danger_mj:hover,
+button.bg_danger_mj:focus,
+button.bg_danger_mj:hover {
+    background-color: var(--danger-20);
+}
+
+
+/****** Status color END here ******/
+
+
+/*********** Notification bar start here **************/
+
+#top-header p.notification {
+    color: var(--white);
+    font-size: 12px;
+    margin-bottom: 0;
+}
+
+ul.social {
+    list-style: none;
+    margin-bottom: 0 !important;
+}
+
+ul.social li {
+    display: inline-block;
+    background-color: var(--prime-2-100);
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+ul.social li:hover {
+    background-color: var(--prime-1-100);
+}
+
+ul.social li a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+ul.social li a:hover {
+    color: var(--white);
+    text-decoration: none;
+}
+
+ul.social li.link-text {
+    color: var(--white);
+    font-size: 12px;
+}
+
+ul.social li.link-text:hover {
+    background-color: none;
+}
+.text-right {
+    text-align: right!important;
+}
+
+/************* Notification bar END here *************/
+
+
+/************* MEDICALJAGAT BUTTON FAMILY START HERE *************/
+
+
+/** common button styling**/
+
+.btn-mj {
+    padding: 12px 32px;
+    text-align: center;
+    font-weight: 400;
+    font-family: var(--running-font);
+    font-size: 16px;
+    letter-spacing: 0.15px;
+    border-radius: 4px;
+}
+
+.btn-mj-s {
+    padding: 4px 12px;
+    text-align: center;
+    font-weight: 400;
+    font-family: var(--running-font);
+    font-size: 12px;
+    letter-spacing: 0.4px;
+    border-radius: 4px;
+}
+
+.btn-mj-add {
+    padding: 8px 16px;
+    text-align: center;
+    font-weight: 400;
+    font-family: var(--running-font);
+    font-size: 14px;
+    border-radius: 32px;
+}
+
+
+/** Large button styling**/
+
+.btn_primary_large {
+    background-color: var(--prime-1-100);
+    color: var(--white);
+    border: none;
+}
+
+.btn_primary_large:hover {
+    background-color: var(--prime-2-100);
+}
+
+.btn_primary_large:disabled {
+    background-color: var(--prime-2-80);
+    border: 1px solid var(--tertiary-80);
+}
+
+.btn_primary_large_disable {
+    background-color: var(--prime-2-20);
+    color: var(--black-40);
+    border: 1px solid var(--prime-2-20);
+}
+
+.btn_secondary_large {
+    background-color: var(--white);
+    color: var(--prime-1-100);
+    border: 1px solid var(--prime-1-100);
+}
+
+.btn_secondary_large:hover {
+    background-color: var(--prime-2-80);
+    color: var(--white);
+    border-color: var(--prime-2-80);
+}
+
+.btn_secondary_large:disabled {
+    background-color: var(--prime-2-80);
+    color: var(--white);
+    border-color: var(--prime-2-80);
+}
+
+.btn_secondary_large_disable {
+    background-color: var(--prime-2-20);
+    color: var(--black-40);
+    border: 1px solid var(--black-30);
+}
+
+.btn_tertiary_large {
+    background-color: var(--white);
+    color: var(--prime-1-100);
+    border: none;
+    text-decoration: underline;
+}
+
+.btn_tertiary_large:hover {
+    color: var(--prime-2-100);
+    text-decoration: underline;
+}
+
+.btn_primary_small {
+    background-color: var(--prime-1-100);
+    color: var(--white);
+    border: none;
+}
+
+.btn_primary_small:hover {
+    background-color: var(--prime-2-100);
+}
+
+.btn_primary_small_disable {
+    background-color: var(--prime-2-20);
+    color: var(--black-40);
+    border: 1px solid var(--prime-2-20);
+}
+
+.btn_primary_small:disabled {
+    background-color: var(--prime-2-80);
+    border: 1px solid var(--tertiary-80);
+}
+
+.btn_secondary_small {
+    background-color: var(--white);
+    color: var(--prime-1-100);
+    border: 1px solid var(--prime-1-100);
+}
+
+.btn_secondary_small:hover {
+    background-color: var(--prime-2-80);
+    color: var(--white);
+    border-color: var(--prime-2-80);
+}
+
+.btn_secondary_small_disable {
+    background-color: var(--prime-2-20);
+    color: var(--black-40);
+    border: 1px solid var(--black-30);
+}
+
+.btn_secondary_small:disabled {
+    background-color: var(--prime-2-80);
+    color: var(--white);
+    border-color: var(--prime-2-80);
+}
+
+.btn_tertiary_small {
+    background-color: var(--white);
+    color: var(--prime-1-100);
+    text-decoration: underline;
+    border: none;
+    font-weight: 500;
+}
+
+.btn_tertiary_small:hover {
+    color: var(--prime-2-100);
+}
+
+
+/** Addmission button styling**/
+
+.dark-bg-add {
+    color: var(--white);
+    background-color: var(--sec-2-100);
+    border: 1px solid var(--sec-2-100);
+}
+
+.dark-bg-add:hover {
+    background-color: var(--white);
+    color: var(--sec-2-100);
+}
+
+.light-bg-add {
+    color: var(--prime-2-100);
+    background-color: var(--prime-2-20);
+    border: 1px solid var(--prime-2-20);
+}
+
+.light-bg-add:hover {
+    color: var(--white);
+    background-color: var(--prime-2-80);
+    border: 1px solid var(--prime-2-80);
+}
+
+.sub-silos-list {
+    border: 1px solid #000;
+    padding: 12px;
+    border-radius: 4px;
+    vertical-align: middle;
+}
+
+.sub-silos-list:hover {
+    border: 1px solid var(--prime-1-100);
+    color: var(--prime-1-100);
+}
+
+
+/************* MEDICALJAGAT BUTTON FAMILY END HERE *************/
+
+
+/************* Article Tile start header *************/
 
 .title-mj {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
+
 .title-mj h4 {
-  color: var(--black);
+    color: var(--black);
 }
 
-.text-center {
-  text-align: center!important;
-}
-.h4, h4 {
-  font-size: 36px !important;
-}
-.h1, .h2, .h3, .h4, .h5, .h5-sb, .h6, .h6-sb, h1, h2, h3, h4, h5, h6 {
-  font-family: 'vollkern', serif;
-}
 .title-mj p {
-  color: var(--black-60);
-  margin-bottom: 20px !important;
+    color: var(--black-60);
+    margin-bottom: 20px !important;
 }
 
-.s2-14-r {
-  font-family: var(--running-font);
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 140%;
-  letter-spacing: 0.15px;
+.card-body-mj {
+    flex: 1 1 auto;
+    padding: 8px;
 }
-p {
-  margin-top: 0;
+
+.card-blog-mj,
+.card-college-mj {
+    border-radius: 4px !important;
+    border: 1px solid var(--black-20) !important;
 }
+
+.card-banner-img {
+    height: 140px;
+    border-radius: 4px 4px 0 0;
+}
+
+.card-body-mj p.card-heading a {
+    letter-spacing: var(--letter-space);
+    margin-bottom: 0;
+    color: var(--black);
+    text-decoration: none;
+}
+
+.card-body-mj p {
+    margin-bottom: 0 !important;
+}
+
+.card-body-mj p.card-heading a:hover {
+    color: var(--prime-1-100);
+    text-decoration: none;
+}
+
+.card-body-mj p.card-para {
+    color: var(--black-60);
+}
+
+.blog_cat_icon {
+    color: var(--white);
+    position: absolute;
+    top: 104px;
+    left: 8px;
+}
+
+.heart {
+    position: absolute;
+    top: 112px;
+    right: 12px;
+    color: var(--prime-1-100);
+}
+
+.heart:hover::before {
+    content: "\f004";
+}
+
+
+/************* Article Tile end here *************/
+
+
+/************* College Tile Start Here *************/
+
+.card_bottom_colg {
+    margin-top: -60px;
+    display: inline-block;
+}
+
+.card_bottom_colg img.colg_logo {
+    height: 52px;
+    width: 52px;
+    margin-left: 8px;
+    border-radius: 4px;
+}
+
+.card-college-mj .colg_cat_icon {
+    color: var(--white);
+    position: absolute;
+    top: 104px;
+    left: 68px;
+}
+
+ul.colg_sub_silos {
+    line-height: 1.4;
+    list-style: none;
+    margin-bottom: 8px;
+}
+
+ul.colg_sub_silos li {
+    display: inline-block;
+    margin-left: 8px;
+}
+
+ul.colg_sub_silos li a {
+    color: var(--tertiary-100);
+    text-decoration: none;
+}
+
+ul.colg_sub_silos li a:hover {
+    color: var(--prime-1-100);
+    text-decoration: none;
+}
+
+.card-body-mj ul.colg-fee,
+ul.colg-enterance-exam {
+    list-style: none;
+    margin-bottom: 0;
+}
+
+.card-body-mj ul.colg-fee li {
+    display: inline-block;
+}
+
+.card-body-mj .colg-fee li.high,
+ul.colg-enterance-exam li.high {
+    color: var(--prime-1-100);
+}
+
+.card-body-mj .colg-fee li.low,
+ul.colg-enterance-exam li.low {
+    color: var(--black-40);
+}
+
+
+/************* College Tile End Here *************/
+
+
+/************* City Tile Start Here *************/
+
+#city-section .cities {
+    background-color: var(--white);
+    border: 1px solid var(--black-10);
+    margin: 8px;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+#city-section .cities:hover {
+    box-shadow: 0px 8px 13px rgba(0, 0, 0, 0.05);
+}
+
+#city-section .cities a {
+    text-decoration: none;
+}
+
+#city-section .cities a p.city-name {
+    color: var(--black);
+    margin-top: 20px;
+    margin-bottom: 4px;
+}
+
+#city-section .cities a p.no-college {
+    color: var(--black-50);
+}
+
+
+/************* City Tile End Here *************/
+
+
+/************* Breadcrumb Start Here *************/
+
+ul.breadcrumb-stepper {
+    list-style: none;
+    margin-bottom: 0 !important;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    content: ">" !important;
+}
+
+.breadcrumb {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: flex-start;
+    padding: 20px !important;
+    margin-top: 20px !important;
+    background-color: var(--prime-2-20) !important;
+    margin-bottom: 0 !important;
+}
+
+.breadcrumb h6 {
+    color: var(--prime-2-100);
+}
+
+.breadcrumb ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.breadcrumb ul li {
+    display: inline-block;
+}
+
+.breadcrumb-item {
+    font-size: 10px;
+}
+
+
+/************* Breadcrumb End Here *************/

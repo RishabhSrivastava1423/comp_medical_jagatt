@@ -2,7 +2,7 @@ import React from 'react'
 
 function TableContent() {
   return (
-    <table align='center' className="table table-responsive" cellspacing cellPadding>
+    <table align='center' className="table table-responsive" cellSpacing cellPadding>
   <thead>
             <tr>
               <td>Primary Button</td>

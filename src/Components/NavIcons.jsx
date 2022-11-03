@@ -28,7 +28,7 @@ const NavIcons = () => {
         </li>
         <li className="link-text">
           <Link to="/">
-          <i class="fa fa-youtube"></i>
+          <i className="fa fa-youtube"></i>
           </Link>
         </li>
         <li className="link-text">

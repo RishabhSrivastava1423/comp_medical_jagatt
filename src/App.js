@@ -1,12 +1,15 @@
-import "bootstrap/dist/css/bootstrap.css";
+// import "bootstrap/dist/css/bootstrap.css";
+// import "bootstrap/dist/css/bootstrap.min.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import NavIcons from "./Components/NavIcons";
 import TableContent from "./Components/TableContent";
 import HeadingComponent from "./Components/HeadingComponent";
 import ArticleCard from "./Components/ArticleCard";
 import CollegeCard from "./Components/CollegeCard";
+import HeadingContent from './Components/HeadingContent';
 
 function App() {
   return (
@@ -30,6 +33,10 @@ function App() {
         </div>
       </div>
 
+
+      <div className='container'>
+        <HeadingContent/>
+      </div>
       <hr/>
 
       <section id="article-section">
@@ -71,7 +78,7 @@ function App() {
         </div>
       </div>
       <div className="container-fluid container-mj">
-        <div className="row mx-2 my-3">
+        <div className="row">
           <div className="col-lg-3 col-md-4 col-sm-6 col-12 p-2"> <CollegeCard/> </div>
           <div className="col-lg-3 col-md-4 col-sm-6 col-12 p-2">  <CollegeCard/></div>
           <div className="col-lg-3 col-md-4 col-sm-6 col-12 p-2">  <CollegeCard/></div>
