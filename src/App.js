@@ -2,7 +2,7 @@
 // import "bootstrap/dist/css/bootstrap.min.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Link } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import NavIcons from "./Components/NavIcons";
 import TableContent from "./Components/TableContent";
@@ -10,6 +10,7 @@ import HeadingComponent from "./Components/HeadingComponent";
 import ArticleCard from "./Components/ArticleCard";
 import CollegeCard from "./Components/CollegeCard";
 import HeadingContent from './Components/HeadingContent';
+import CityComponent from './Components/CityComponent';
 
 function App() {
   return (
@@ -43,7 +44,7 @@ function App() {
       <div className="container">
         <div className="row">
           <div className="col-12 title-mj">
-            <HeadingComponent title='Articles'/>
+            <HeadingComponent title='Our Articles card Component here'/>
           </div>
         </div>
       </div>
@@ -66,14 +67,13 @@ function App() {
         </div>
       </div>
       </section>
-
       <hr/>
 
       <section id="college-list">
       <div className="container">
         <div className="row">
           <div className="col-12 title-mj">
-            <HeadingComponent title='College Title'/>
+            <HeadingComponent title='Our College Tile Component Start here'/>
           </div>
         </div>
       </div>
@@ -90,6 +90,32 @@ function App() {
         </div>
       </div>
       </section>
+      <hr/>
+
+      <section id = "city-section">
+        <div className="container">
+          <div className="row">
+          <div className="col-12 title-mj">
+            <HeadingComponent title="Explore colleges at your Location"/>
+          </div>
+          </div>
+          <CityComponent/>
+        </div>
+      </section>
+      <hr/>
+      {/* BreadCum starts Here */}
+      <div className="container-fluid container-mj">
+        <nav>
+            <div className="breadcrumb">
+                <ul className="row mb-2">
+                    <li className="breadcrumb-item o-10-r"><Link to="/">Home</Link></li>
+                    <li className="breadcrumb-item o-10-r active" aria-current="page">Courses</li>
+                </ul>
+                <h6>All India Courses according to their category &amp;</h6>
+            </div>
+        </nav>
+    </div>
+    <hr/>
     </div>
     </BrowserRouter>
   );
