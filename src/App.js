@@ -11,6 +11,7 @@ import ArticleCard from "./Components/ArticleCard";
 import CollegeCard from "./Components/CollegeCard";
 import HeadingContent from './Components/HeadingContent';
 import CityComponent from './Components/CityComponent';
+import NewsComponent from './Components/NewsComponent';
 
 function App() {
   return (
@@ -116,6 +117,17 @@ function App() {
         </nav>
     </div>
     <hr/>
+    {/* News Card Section */}
+    <section id="newscard-section">
+      <div class="container">
+      <div className="row">
+          <div className="col-12 title-mj">
+            <HeadingComponent title="Big Stories - News Card"/>
+          </div>
+          </div>
+          <NewsComponent/>
+      </div>
+    </section>
     </div>
     </BrowserRouter>
   );

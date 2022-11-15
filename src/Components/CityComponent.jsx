@@ -4,21 +4,21 @@ import delhi from '../assests/city/delhi.svg'
 const CityComponent = () => {
   return (
     <React.Fragment>
-        <div class="row">
+        <div className="row">
             <CityCard src={delhi} name="Delhi" number="120"/>
             <CityCard src={delhi} name="Delhi" number="120"/>
             <CityCard src={delhi} name="Delhi" number="120"/>
             <CityCard src={delhi} name="Delhi" number="120"/>
             <CityCard src={delhi} name="Delhi" number="120"/>
           </div>
-          <div class="row">
+          <div className="row">
           <CityCard src={delhi} name="Delhi" number="120"/>
           <CityCard src={delhi} name="Delhi" number="120"/>
           <CityCard src={delhi} name="Delhi" number="120"/>
           <CityCard src={delhi} name="Delhi" number="120"/>
           <CityCard src={delhi} name="Delhi" number="120"/>
           </div>
-          <div class="row">
+          <div className="row">
           <CityCard src={delhi} name="Delhi" number="120"/>
           <CityCard src={delhi} name="Delhi" number="120"/>
           <CityCard src={delhi} name="Delhi" number="120"/>

@@ -579,7 +579,7 @@ ul.social li.link-text:hover {
     padding: 8px;
 }
 
-.card-blog-mj,
+.card-blog-mj, .card-news-mj,
 .card-college-mj {
     border-radius: 4px !important;
     border: 1px solid var(--black-20) !important;
@@ -594,7 +594,15 @@ ul.social li.link-text:hover {
     letter-spacing: var(--letter-space);
     margin-bottom: 0;
     color: var(--black);
-    text-decoration: none;
+    display: block;
+    position: inherit;
+    display: -webkit-box;
+    max-width: 100%;
+    margin: 0 auto;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .card-body-mj p {
@@ -608,6 +616,15 @@ ul.social li.link-text:hover {
 
 .card-body-mj p.card-para {
     color: var(--black-60);
+    display: block;
+    position: inherit;
+    display: -webkit-box;
+    max-width: 100%;
+    margin: 0 auto;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .blog_cat_icon {
@@ -772,3 +789,38 @@ ul.breadcrumb-stepper {
 
 
 /************* Breadcrumb End Here *************/
+
+/************ News Start Here ******************/
+.news_cat_icon {
+    color: var(--black-50);
+}
+
+.news_cat_icon span {
+    margin-right: 12px;
+}
+
+.news_crd_date {
+    color: var(--sec-2-100);
+}
+
+.news_small_card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: .25rem;
+}
+
+.news_small_card .news_banner {
+    padding: 8px 0 8px 8px;
+}
+
+.news_small_card .news_banner img {
+    width: 80px;
+    height: 80px;
+    border-radius: 4px;
+}
